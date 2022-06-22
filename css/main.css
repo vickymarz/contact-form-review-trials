@@ -96,6 +96,18 @@ main {
   color: #fff;
 }
 
+li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+}
+
 .socials {
   display: flex;
   justify-content: center;
@@ -113,7 +125,7 @@ main {
 }
 
 .socials li a i {
-  color: #505F79;
+  color: #505f79;
   font-size: 30px;
 }
 
@@ -217,18 +229,6 @@ main {
   right: 0;
 }
 
-li {
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 43px;
-  text-align: center;
-  color: #fff;
-  padding: 5px;
-}
-
 .card-stacks li {
   background: rgba(255, 255, 255, 0.24) !important;
   backdrop-filter: blur(2px);
@@ -275,6 +275,10 @@ li {
   color: #fff;
   transition: 350ms;
   cursor: pointer;
+}
+
+form ul li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .project-stacks li:hover {
@@ -347,26 +351,20 @@ li {
   list-style: inside url("../media/svg/circle.svg");
 }
 
-
-
-form ul li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .contact {
   background-color: white;
   padding-top: 80px;
 }
 
 .contact-container {
- background-color: white;
+  background-color: white;
 }
 
 .contact h1 {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   padding-top: 80px;
   padding-left: 24px;
   padding-right: 24px;
@@ -388,9 +386,8 @@ form ul li input {
   outline: none;
 }
 
-
 form ul li textarea {
-  background: #FBF8F7;
+  background: #fbf8f7;
   border: 1px solid #cfd8dc;
   padding: 15px 16px;
   outline: none;
@@ -408,7 +405,7 @@ form ul li textarea {
 
 #submit-btn {
   padding: 12px;
-  background: #FF6B00;
+  background: #ff6b00;
   margin-top: 12px;
   margin-bottom: 50px;
   font-weight: 500;
@@ -428,15 +425,16 @@ form ul li textarea {
   }
 
   .contact h1 {
-   font-size: 40px;
-   line-height: 50px;
-   text-align: left;
-   padding-left: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 40px;
   }
 
   .validate {
     display: flex;
     justify-content: center;
+    justify-content: flex-start;
   }
 
   form {
@@ -464,10 +462,6 @@ form ul li textarea {
 
   form ul li textarea:focus {
     border: 2px solid #396df2;
-  }
-
-  .validate {
-    justify-content: flex-start;
   }
 
   #submit-btn {
