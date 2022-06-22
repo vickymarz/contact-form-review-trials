@@ -325,3 +325,159 @@ li {
 .skills {
   list-style: inside url("../media/svg/circle.svg");
 }
+
+
+
+form ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact {
+  background-color: white;
+  padding-top: 80px;
+}
+
+.contact-container {
+  background: url(../media/png/contact-form-shapes-mobile.png) 100% 21px no-repeat;
+  background-color: #6070ff;
+  border-top-left-radius: 150px;
+  background-size: auto 725px;
+  object-fit: cover;
+  min-height: 779px;
+  z-index: 2;
+}
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: white;
+  padding-top: 103px;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ebebff;
+  padding: 20px;
+  transition: transform 3s;
+}
+
+.contact p:hover {
+  transform: translateX(10px);
+}
+
+form {
+  padding: 30px 24px 0 24px;
+}
+
+form ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+form ul li input {
+  width: 100%;
+  border: 1px solid #b3bac5;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+  line-height: 20px;
+  color: #172b4d;
+  padding: 15px 16px;
+  outline: none;
+}
+
+form ul li input:focus {
+  border: 2px solid #396df2;
+}
+
+form ul li textarea {
+  background: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px 16px;
+  outline: none;
+  width: 100%;
+  height: 170px;
+  color: #172b4d;
+  font-size: 15px;
+}
+
+form ul li textarea:focus {
+  border: 2px solid #396df2;
+}
+
+#submit-btn {
+  padding: 12px 16px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-container {
+    background: url(../media/png/contact-form-background-shapes.png) 0 79px no-repeat;
+    border-top-left-radius: 150px;
+    background-size: 100% 632.79px;
+    min-height: 718.7px;
+    min-width: 375px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .contact p {
+    width: 569px;
+  }
+
+  .validate {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    padding: 30px 24px 0 24px;
+  }
+
+  form ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form ul li input {
+    width: 447px;
+    border-radius: 2px;
+  }
+
+  form ul li input:focus {
+    border: 2px solid #396df2;
+  }
+
+  form ul li textarea {
+    border-radius: 2px;
+  }
+
+  form ul li textarea:focus {
+    border: 2px solid #396df2;
+  }
+
+  #submit-btn {
+    display: block;
+    margin-top: 27px;
+    transform: translateX(100px);
+    margin-bottom: 127px;
+  }
+}
