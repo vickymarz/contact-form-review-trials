@@ -416,6 +416,22 @@ form ul li textarea {
   color: white;
 }
 
+#submit-btn:hover {
+  background-color: #FFF5E1;;
+  color: #F55800;
+  border: 1px solid #F55800;
+}
+
+#submit-btn:active {
+  background-color: #F55800;
+  color: #F55800;
+}
+
+#submit-btn:disabled {
+  background-color: #F4F1F0;
+  color: #5B5957;
+}
+
 @media only screen and (min-width: 992px) {
   .contact-container {
     display: grid;
